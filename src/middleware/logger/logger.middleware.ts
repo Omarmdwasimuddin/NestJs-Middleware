@@ -5,7 +5,11 @@ import { NextFunction, Request, Response } from 'express';
 export class LoggerMiddleware implements NestMiddleware {
   use(req: Request, res: Response, next: NextFunction) {
 
-    console.log(`Request: [${req.method}] - [${req.originalUrl}]`);
+    const time = new Date().toISOString();
+
+    console.log(
+      `[${time}] ${req.method} ${req.originalUrl}`
+    );
 
     next();
   }
