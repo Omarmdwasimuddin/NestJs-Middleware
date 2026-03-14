@@ -43,6 +43,6 @@ export class AppModule implements NestModule {
 }
 ```
 
-##### Note: http://localhost:3000/ ei url visit korle request method o path console e show korbe
+##### Note: url visit korle request method o path console e show korbe
 
 ![](/public/Img/middlewareoutput.png)
